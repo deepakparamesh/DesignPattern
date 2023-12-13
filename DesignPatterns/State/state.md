@@ -1,0 +1,1 @@
+﻿There can be different states in an application. This is to cover them.
