@@ -9,7 +9,12 @@ namespace DesignPatterns.State
     public class Canvas
     {
         private ITool currentTool;
-    
+        
+        public Canvas(ITool currentTool)
+        {
+            this.currentTool = currentTool;
+        }
+
         public void onMouseUp()
         {
             currentTool.onMouseUp();
@@ -18,16 +23,6 @@ namespace DesignPatterns.State
         public void onMouseDown()
         {
             currentTool.onMouseDown();
-        }
-
-        public ITool getTool()
-        {
-            return currentTool;
-        }
-
-        public void setTool(ITool currentTool)
-        {
-            this.currentTool = currentTool;
         }
     }
 }
