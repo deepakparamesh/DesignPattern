@@ -73,6 +73,7 @@
             Console.WriteLine("Welcome to state Pattern");
             
             Canvas newCanvas = new();
+            // we are setting the state
             newCanvas.setCurrentTool(new BrushTool());
             newCanvas.onMouseDown();
             newCanvas.onMouseUp();
