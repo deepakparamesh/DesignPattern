@@ -33,6 +33,7 @@
             }
         }
 
+        // Factory Class
         public class NotificationFactory
         {
             public INotification getNotification(string notificationType)
